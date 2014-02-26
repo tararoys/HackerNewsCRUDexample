@@ -126,4 +126,9 @@ end
 desc "Run the specs"
 RSpec::Core::RakeTask.new(:spec)
 
+desc "drops, creates, migrates, and seeds test database"
+task "db:hard_reset" do
+  exec "RACK_ENV=test rake db:drop && RACK_ENV=test rake db:create && RACK_ENV=test rake db:migrate && RACK_ENV=test rake db:seed"
+end
+
 task :default  => :specs
