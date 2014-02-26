@@ -21,17 +21,13 @@ describe User do
   end
 
   it "should have a hashed password" do 
-    
-    include BCrypt
 
-    def hashy password
-      BCrypt::Password.create(password)
-    end
-
-    tara = User.create(name:"Tara", password_hash: hashy("password"))
-    expect(tara.reload.password_hash).to_not eq("password")
+    tara = User.create(name:"Tara", password:"password")
+    expect(tara.reload.password_hash).to eq("password")
+    #expect(tara.reload.password_hash).to eq("some_different_hash_every_time")
+    #this test above shows that even though I feed the same password in, I'll get a different hash out. This probably has to do with salting magic. 
+    expect(tara.password).to eq("password") #password works due to bcrypt comparison magic. Yay bcrypt comparison magic!
 
   end
-
 
 end
