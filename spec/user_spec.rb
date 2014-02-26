@@ -43,6 +43,15 @@ describe User do
       expect(User.where(email: "Debra@debra.com").count).to eq(1)
     end
 
+    it "should be an actual email" do 
+      u1 = User.create(email: "tara", password: "password");
+      expect(u1.valid?).to eq(false);
+
+      u2 = User.create(email: "tara@tara.com",  password: "password");
+
+      expect(u2.valid?).to eq(true);
+    end 
+
 
 
 end
