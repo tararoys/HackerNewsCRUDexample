@@ -2,7 +2,6 @@ class User < ActiveRecord::Base
   # Remember to create a migration!
   
  validates :email, presence: true 
- # validates :email, :presence => true, {:message => "please give your email"}
  validates :email, :uniqueness => true
  
  validates :email, :format => {
