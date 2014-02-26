@@ -55,10 +55,12 @@ describe User do
     it "You should have an email" do 
       u1 = User.create(password: "password");
 
-      expect(u1.errors[:email][0]).to eq("can't be blank");
+      expect(u1.errors[:email][0]).to eq("Email is required");
       # expect {User.create(password: "password")}.to raise_error "hello"
     
     end 
+
+    
 
 
 
