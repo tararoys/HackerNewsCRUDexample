@@ -11,13 +11,13 @@ describe User do
   end
 
   it "should have a password_hash" do
-    tara = User.new(email: "tara@tara.com", password_hash: "password")
-    expect(tara.password_hash).to eq("password")
+    tara = User.new(email: "tara@tara.com", password: "password")
+    expect(tara.password).to eq("password")
   end 
 
   it "should have a unique email" do 
-    User.create(email: "admin@admin.com")
-    admin = User.new(email:"admin@admin.com", password_hash:"password")
+    User.create(email: "admin@admin.com", password: "password")
+    admin = User.new(email:"admin@admin.com", password: "password")
     expect{admin.save(validate: false)}.to raise_error(ActiveRecord::RecordNotUnique) #skipping ruby validations in order to raise database constraint error
   end
 
@@ -60,7 +60,12 @@ describe User do
     
     end 
 
-    
+    it "You should have a password" do 
+      
+      expect{User.create(email: "tara@tara.com")}.to raise_error BCrypt::Errors::InvalidHash
+    end
+
+
 
 
 

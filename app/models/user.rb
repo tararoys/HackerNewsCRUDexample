@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
           :with => /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,5}$/,
           :message => "Email Format should be *@*.*"
         } 
+ validates :password, presence: {message: "You must have a password"}
   
  include BCrypt
  
