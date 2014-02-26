@@ -20,5 +20,18 @@ describe User do
     expect{User.create(name:"admin", password_hash:"password")}.to raise_error(ActiveRecord::RecordNotUnique)
   end
 
-  
+  it "should have a hashed password" do 
+    
+    include BCrypt
+
+    def hashy password
+      BCrypt::Password.create(password)
+    end
+
+    tara = User.create(name:"Tara", password_hash: hashy("password"))
+    expect(tara.reload.password_hash).to_not eq("password")
+
+  end
+
+
 end
