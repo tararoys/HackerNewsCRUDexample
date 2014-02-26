@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # Remember to create a migration!
   
- validates :name, :uniqueness => true
+ validates :email, :uniqueness => true
   
  include BCrypt
  
