@@ -15,5 +15,5 @@ describe Post do
         first_post = Post.create(content)
         expect(first_post.title).to eq("First Post")
       end
-    
+
 end
