@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
   # Remember to create a migration!
+  # 
+
+  has_many :comments
+  has_many :posts, :through => :comments  
   
  validates :email, presence: {message: "Email is required"} 
  validates :email, :uniqueness => true
