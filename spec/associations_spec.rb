@@ -33,5 +33,22 @@ describe "Join Table Associations" do
 
       end
     end
+    
+    xit "Does creating post and shoveling it into user automatically set the user id?" do 
+      #source http://www.davidverhasselt.com/set-attributes-in-activerecord/
+      tara = User.create(email: "tara@tara.com", password: "password")
+      post_content = {
+                  title: "First Post",
+                  content: "Yay lots of content"
+                 }
+      tara.posts << Post.create(post_content)
+      post = Post.first
+      expect(Post.all.count).to eq(1)
+      expect(post.user_id).not_to eq(nil)
+      expect(post.users.first.id).to eq(tara.id)
+      expect(tara.posts.first.title).to eq("First Post")
+      expect(post.user.email).to eq("tara@tara.com")
+ 
+    end
 
 end
