@@ -20,6 +20,23 @@ describe "Activerecord CRUD" do
       expect(kori.email).to eq("kori@kori.com")
     end 
 
+  it "join table creation with the shovel operator" do
+      # have a user that exists
+      # create a post and stick it in the users posts. 
+      # 
+      # if I do the magic right, when I create a post, I don't have to include the user id because activerecord will add that whenI shovel
+      
+      tara = User.create(email: "tara@tara.com", password: "password")
+        post_content = {
+                  title: "First Post",
+                  content: "Yay lots of content"
+                 }
+      tara.posts << Post.create(post_content)
+      expect(tara.posts.count).to eq(1)
+      
+    end
+
+
 
   pending "Read"
     xit "basic find methods" do 
