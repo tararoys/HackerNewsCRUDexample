@@ -84,6 +84,20 @@ describe "Activerecord CRUD" do
       expect(post.title).to eq("hello world");
     end
 
+    it "basic update method #3" do 
+      #source http://www.davidverhasselt.com/set-attributes-in-activerecord/
+      tara = User.create(email: "tara@tara.com", password: "password")
+      post_content = {
+                  title: "First Post",
+                  content: "Yay lots of content"
+                 }
+      tara.posts << Post.create(post_content)
+      post = Post.first
+      post.title = "Changing record"
+      expect(post.title).to eq("Changing record");
+    end    
+
+
   pending "delete"
 
 
