@@ -37,16 +37,21 @@ describe "Activerecord CRUD" do
     end
 
 
-
-  pending "Read"
-    xit "basic find methods" do 
-    end
-    xit "basic where methods" do 
+  xit "basic find methods" do 
+            tara = User.create(email: "tara@tara.com", password: "password")
+            expect(User.find_by("tara@tara.com").email).to eq(tara.email)
+            #find_by is a special method. The method name is activerecord magic  
+  end
+  
+  it "basic where methods" do 
+      tara = User.create(email: "tara@tara.com", password: "password")
+      expect(User.where(email: "tara@tara.com").first.email).to eq (tara.email)
     end  
   pending "update"
     xit "basic update method" do 
     end
   pending "delete"
+
     xit "basid delete method" do 
     end
 end
