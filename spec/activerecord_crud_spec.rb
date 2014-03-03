@@ -37,10 +37,13 @@ describe "Activerecord CRUD" do
     end
 
 
-  xit "basic find methods" do 
-            tara = User.create(email: "tara@tara.com", password: "password")
-            expect(User.find_by("tara@tara.com").email).to eq(tara.email)
-            #find_by is a special method. The method name is activerecord magic  
+  it "basic find methods" do
+     #there is a find, find takes an id      
+     tara = User.create(email: "tara@tara.com", password: "password")
+     expect(User.find_by_email("tara@tara.com").email).to eq(tara.email)
+     
+     #find_by is a special method. The method name is activerecord magic
+     #find by returns the first matching thing. use this for unique things.  
   end
   
   it "basic where methods" do 
