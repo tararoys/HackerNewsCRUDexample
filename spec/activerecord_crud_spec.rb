@@ -49,6 +49,7 @@ describe "Activerecord CRUD" do
   it "basic where methods" do 
       tara = User.create(email: "tara@tara.com", password: "password")
       expect(User.where(email: "tara@tara.com").first.email).to eq (tara.email)
+      #where is for more than one thing.  
     end  
 
     it "basic update method" do 
