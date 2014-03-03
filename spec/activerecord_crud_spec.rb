@@ -53,6 +53,7 @@ describe "Activerecord CRUD" do
     end  
 
     it "basic update method" do 
+      #source: http://apidock.com/rails/ActiveRecord/Base/update/class
       tara = User.create(email: "tara@tara.com", password: "password")
       post_content = {
                   title: "First Post",
