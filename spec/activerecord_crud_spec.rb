@@ -47,9 +47,22 @@ describe "Activerecord CRUD" do
       tara = User.create(email: "tara@tara.com", password: "password")
       expect(User.where(email: "tara@tara.com").first.email).to eq (tara.email)
     end  
-  pending "update"
-    xit "basic update method" do 
+
+    it "basic update method" do 
+      tara = User.create(email: "tara@tara.com", password: "password")
+      post_content = {
+                  title: "First Post",
+                  content: "Yay lots of content"
+                 }
+      tara.posts << Post.create(post_content)
+      post = Post.first
+
+      Post.update(post.id, title: "Randall Munroe hates your first post")
+
+      post = Post.first
+      expect(post.title).to eq("Randall Munroe hates your first post");
     end
+
   pending "delete"
 
     xit "basid delete method" do 
