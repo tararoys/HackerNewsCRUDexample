@@ -2,8 +2,8 @@ class CreateComments < ActiveRecord::Migration
   def change
     create_table :comments do |column|
 
-      column.belongs_to :user
-      column.belongs_to :post
+      column.integer :user_id
+      column.integer :post_id
       column.text :content
 
       column.timestamps 

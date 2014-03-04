@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Join Table Associations" do
+describe "Associations" do
 
       after do
         Post.delete_all
@@ -14,8 +14,8 @@ describe "Join Table Associations" do
         zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
         inara = User.create(name: "inara", email: "inara@serenity.com", password: "password")
 
-        hate_the_alliance = Post.create(title: "I hate the alliance", source: "We will rise again.", author_id: zoe.id)
-        i_said_dont = Post.create(title: "Don't come in my shuttle", source: "The exact words I used were don't", author_id: inara.id)
+        hate_the_alliance = Post.create(title: "I hate the alliance", source: "We will rise again.", author: zoe)
+        i_said_dont = Post.create(title: "Don't come in my shuttle", source: "The exact words I used were don't", author: inara)
 
 
         zoe_hates_alliance = Comment.create(user_id: zoe.id, post_id: hate_the_alliance.id, content: "You have a problem with your brain being missing")
@@ -50,5 +50,14 @@ describe "Join Table Associations" do
       expect(post.user.email).to eq("tara@tara.com")
  
     end
+
+    it ("a basic one to many relationshop where the forieign key is renamed") do 
+      zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
+      post = Post.create(title: "I hate the alliance", source: "We will rise again.", author: zoe)
+      
+      # expect(zoe.posts.count).to eq(1)
+      expect(post.author.name).to eq("zoe")
+
+    end 
 
 end
