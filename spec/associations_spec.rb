@@ -14,8 +14,8 @@ describe "Join Table Associations" do
         zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
         inara = User.create(name: "inara", email: "inara@serenity.com", password: "password")
 
-        hate_the_alliance = Post.create(title: "I hate the alliance", content: "We will rise again.", user_id: zoe.id)
-        i_said_dont = Post.create(title: "Don't come in my shuttle", content: "The exact words I used were don't", user_id: inara.id)
+        hate_the_alliance = Post.create(title: "I hate the alliance", source: "We will rise again.", author_id: zoe.id)
+        i_said_dont = Post.create(title: "Don't come in my shuttle", source: "The exact words I used were don't", author_id: inara.id)
 
 
         zoe_hates_alliance = Comment.create(user_id: zoe.id, post_id: hate_the_alliance.id, content: "You have a problem with your brain being missing")
@@ -37,14 +37,14 @@ describe "Join Table Associations" do
     xit "Does creating post and shoveling it into user automatically set the user id?" do 
       #source http://www.davidverhasselt.com/set-attributes-in-activerecord/
       tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-      post_content = {
+      post_source = {
                   title: "First Post",
-                  content: "Yay lots of content"
+                  source: "Yay lots of source"
                  }
-      tara.posts << Post.create(post_content)
+      tara.posts << Post.create(post_source)
       post = Post.first
       expect(Post.all.count).to eq(1)
-      expect(post.user_id).not_to eq(nil)
+      expect(post.author).not_to eq(nil)
       expect(post.users.first.id).to eq(tara.id)
       expect(tara.posts.first.title).to eq("First Post")
       expect(post.user.email).to eq("tara@tara.com")

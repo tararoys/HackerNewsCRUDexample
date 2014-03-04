@@ -6,13 +6,13 @@ describe Post do
         User.delete_all
       end
 
-      it "should have a title, a content, and a user id" do
-        content = {
+      it "should have a title, a source, and a user id" do
+        source = {
                   title: "First Post",
-                  content: "Yay lots of content",
-                  user_id: User.create(name: "tara", email: "tara@tara.com", password: "password").id
+                  source: "Yay lots of source",
+                  author_id: User.create(name: "tara", email: "tara@tara.com", password: "password").id
                  }
-        first_post = Post.create(content)
+        first_post = Post.create(source)
         expect(first_post.title).to eq("First Post")
       end
 

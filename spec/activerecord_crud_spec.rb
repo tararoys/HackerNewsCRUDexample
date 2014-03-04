@@ -28,11 +28,11 @@ describe "Activerecord CRUD" do
     # if I do the magic right, when I create a post, I don't have to include the user id because activerecord will add that whenI shovel
     
     tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-    post_content = {
+    post_source = {
       title: "First Post",
-      content: "Yay lots of content"
+      source: "Yay lots of source"
      }
-    tara.posts.create(post_content)
+    tara.posts.create(post_source)
     expect(tara.posts.count).to eq(1)   
   end
 
@@ -60,8 +60,8 @@ describe "Activerecord CRUD" do
     it "basic update method" do 
       #source: http://apidock.com/rails/ActiveRecord/Base/update/class
       tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-      post_content = { title: "First Post", content: "Yay lots of content" }
-      post = tara.posts.create(post_content)
+      post_source = { title: "First Post", source: "Yay lots of source" }
+      post = tara.posts.create(post_source)
 
       Post.update(post.id, title: "Randall Munroe hates your first post")
 
@@ -72,8 +72,8 @@ describe "Activerecord CRUD" do
     xit "basic update method #2" do 
       #source: http://edgeguides.rubyonrails.org/active_record_basics.html#update
       tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-      post_content = { title: "First Post", content: "Yay lots of content" }
-      tara.posts << Post.create(post_content)
+      post_source = { title: "First Post", source: "Yay lots of source" }
+      tara.posts << Post.create(post_source)
       post = Post.first
       post.update(title: "hello world") 
       expect(post.title).to eq("hello world");
@@ -82,8 +82,8 @@ describe "Activerecord CRUD" do
     it "basic update method #3" do 
       #source http://www.davidverhasselt.com/set-attributes-in-activerecord/
       tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-      post_content = { title: "First Post", content: "Yay lots of content" }
-      post = tara.posts.create(post_content)
+      post_source = { title: "First Post", source: "Yay lots of source" }
+      post = tara.posts.create(post_source)
       post.title = "Changing record"
       expect(post.title).to eq("Changing record");
     end    
@@ -91,11 +91,11 @@ describe "Activerecord CRUD" do
     it "basic update method #4" do 
       #source: http://edgeguides.rubyonrails.org/active_record_basics.html#update
        tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
-      post_content = {
+      post_source = {
                   title: "First Post",
-                  content: "Yay lots of content"
+                  source: "Yay lots of source"
                  }
-      tara.posts << Post.create(post_content)
+      tara.posts << Post.create(post_source)
       post = Post.first
       post.update_attributes(title: "hello world") 
       expect(post.title).to eq("hello world");
