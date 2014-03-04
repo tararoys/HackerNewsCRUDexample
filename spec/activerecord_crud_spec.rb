@@ -97,6 +97,20 @@ describe "Activerecord CRUD" do
       expect(post.title).to eq("Changing record");
     end    
 
+    it "basic update method #4" do 
+      #source: http://edgeguides.rubyonrails.org/active_record_basics.html#update
+       tara = User.create(email: "tara@tara.com", password: "password")
+      post_content = {
+                  title: "First Post",
+                  content: "Yay lots of content"
+                 }
+      tara.posts << Post.create(post_content)
+      post = Post.first
+      post.update_attributes(title: "hello world") 
+      expect(post.title).to eq("hello world");
+    end
+
+
 
   pending "delete"
 
