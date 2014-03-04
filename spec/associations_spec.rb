@@ -11,8 +11,8 @@ describe "Join Table Associations" do
     context "create associations" do 
 
       it "tests that all of the associations for the join table are set up correctly" do
-        zoe = User.create(email: "zoe@serenity.com", password: "password")
-        inara = User.create(email: "inara@serenity.com", password: "password")
+        zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
+        inara = User.create(name: "inara", email: "inara@serenity.com", password: "password")
 
         hate_the_alliance = Post.create(title: "I hate the alliance", content: "We will rise again.", user_id: zoe.id)
         i_said_dont = Post.create(title: "Don't come in my shuttle", content: "The exact words I used were don't", user_id: inara.id)
@@ -36,7 +36,7 @@ describe "Join Table Associations" do
     
     xit "Does creating post and shoveling it into user automatically set the user id?" do 
       #source http://www.davidverhasselt.com/set-attributes-in-activerecord/
-      tara = User.create(email: "tara@tara.com", password: "password")
+      tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
       post_content = {
                   title: "First Post",
                   content: "Yay lots of content"

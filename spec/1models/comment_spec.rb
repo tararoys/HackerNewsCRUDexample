@@ -9,7 +9,7 @@ describe Comment do
   end
 
   it "should have user_id, a post_id, a time created, and a content" do
-        user = User.create(email: "tara@tara.com", password: "password")
+        user = User.create(name: "tara", email: "tara@tara.com", password: "password")
         post = Post.create( title: "First Post", content: "Yay lots of content",
                   user_id: user.id)
 

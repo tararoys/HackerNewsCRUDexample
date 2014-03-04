@@ -10,7 +10,7 @@ describe Post do
         content = {
                   title: "First Post",
                   content: "Yay lots of content",
-                  user_id: User.create(email: "tara@tara.com", password: "password").id
+                  user_id: User.create(name: "tara", email: "tara@tara.com", password: "password").id
                  }
         first_post = Post.create(content)
         expect(first_post.title).to eq("First Post")
