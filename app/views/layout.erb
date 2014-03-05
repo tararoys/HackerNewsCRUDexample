@@ -21,6 +21,7 @@
 
   <nav> 
     <ul>
+        <li> <a href= "/"> Tara News </a> </li>
       <% if session[:user_id] %>
         <li> hello, <%= User.find(session[:user_id]).name %> </li>
         <li><a href="/users/logout">logout</a></li>
