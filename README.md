@@ -69,6 +69,10 @@ Outline of things I needed to learn in order to crud
 
 
 # User stories 
+  - The problem: "I don't have time to write a user story: I need to get coding!"
+  - The counter: "The easiest code to change is the code you haven't written yet."
+  - [Remember associations nightmare? Yeah. user stories fixed it.](https://github.com/tararoys/HackerNewsCRUDexample/commit/a970f6b95394fb5de4fe17c88fdd8876ad60baaf)
+
 # Wireframing
 # Behavior Flows
 # Schema Design
