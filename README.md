@@ -78,6 +78,9 @@ Outline of things I needed to learn in order to crud
   - The counter: [Remember how bad you did on that last assesment? Proper Wireframing Prevents Panic.](https://github.com/tararoys/phase-2-assessment)
 
 # Behavior Flows
+  - The problem...actually I don't have a problem convincing myself to do behavior flows. 
+  - [all right, have fun.  Make sure to adequately timebox yourself.](https://github.com/tararoys/Sinatra-Skills)
+
 # Schema Design
 # Models and Migrations
 # Basic Validations
