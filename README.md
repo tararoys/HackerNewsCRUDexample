@@ -74,6 +74,9 @@ Outline of things I needed to learn in order to crud
   - [Remember associations nightmare? Yeah. user stories fixed it.](https://github.com/tararoys/HackerNewsCRUDexample/commit/a970f6b95394fb5de4fe17c88fdd8876ad60baaf)
 
 # Wireframing
+  - The problem: This app is easy.  I don't have to wireframe it. I need to get coding!" 
+  - The counter: [Remember how bad you did on that last assesment? Proper Wireframing Prevents Panic.](https://github.com/tararoys/phase-2-assessment)
+
 # Behavior Flows
 # Schema Design
 # Models and Migrations
