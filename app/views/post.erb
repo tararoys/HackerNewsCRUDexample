@@ -1,1 +1,5 @@
-"this is a post page"
+<div class="container">
+  <div class="post">
+    <a href="post/<%=@post.id%>"><%= @post.title %></a> <a href="<%= @post.source%>"><%= @post.source%></a><br> <a href="/users/<%=@post.author.id%>"> <%= @post.author.name %> </a> <%= @post.comments.count %>
+  </div>
+</div>
