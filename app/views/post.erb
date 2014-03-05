@@ -4,6 +4,7 @@
   </div>
 
   <div class="comments">
+    <a href="/comment/new?post_id=<%=@post.id%>"> <b> new comment</b></a>
     <ul>
       <% @comments.each do |comment| %>
         <li> <%= comment.content %> <a href="/users/<%=comment.user.id%>"><%= comment.user.name %></a> <span> <%= comment.created_at.to_s(:db) %></span></li>

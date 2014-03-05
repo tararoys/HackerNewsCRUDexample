@@ -1,0 +1,11 @@
+<div class="container">
+    <form id="comment" method="POST" action="/comment/new">
+      <input type="hidden" name="comment[user_id]" value="<%= @user.id %>">
+      <input type="hidden" name="comment[post_id]" value="<%= @post.id %>"> 
+      <span id="name-errors" class="errors"></span>
+      <br>
+      <textarea name="comment[content]" placeholder="We look forward to your commentary">
+      </textarea>
+      <input type="submit" value="Comment!">
+    </form>
+</div>
