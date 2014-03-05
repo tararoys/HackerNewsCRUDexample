@@ -104,5 +104,10 @@ describe "Activerecord CRUD" do
 
     
 
-  it "basic delete method"
+  it "basic delete method" do
+    tara = User.create(name: "tara", email: "tara@tara.com", password: "password")
+    expect(User.all.count).to eq(1)
+    User.delete(tara.id)
+    expect(User.all.count).to eq(0)
+  end 
 end
