@@ -1,0 +1,17 @@
+<div class="container">
+  <form id="sign-up" method="post" action="/users/signup">
+  
+    <span class="errors"><%=@errors.inspect if @errors%> </span>
+    <br>
+    <input type="text" name="user[name]" placeholder="username">
+    <br>
+    <input type="text" name="user[email]" placeholder="email">
+    
+    <br>
+    <input type="password" name="user[password]" placeholder="password">
+    <span id="entered_password-errors" class="errors"></span>
+    <br>
+
+    <div class="submit"><input type="submit" value="log in"></div>
+  </form>
+</div>

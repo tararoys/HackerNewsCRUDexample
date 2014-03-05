@@ -11,10 +11,24 @@ post '/users/login' do
   else
     redirect '/login'
   end
-
 end
 
 get '/users/logout' do
   session[:user_id] = nil
   redirect '/' 
+end
+
+get "/users/signup" do 
+  erb :signup
+end
+
+post '/users/signup' do
+  @user = User.new(params[:user])
+  if @user.save
+    session[:user_id] = @user.id
+    redirect "/"
+  else
+    @errors = @user.errors.full_messages
+    erb :signup
+  end
 end
