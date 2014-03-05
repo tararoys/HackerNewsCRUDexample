@@ -33,7 +33,13 @@ post '/users/signup' do
   end
 end
 
+
 get "/users/:id" do 
   @user = User.find(params[:id])
   erb :profile
+end
+
+get "/users/:id/writings" do 
+  "this is a writings page"
+
 end

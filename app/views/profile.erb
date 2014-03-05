@@ -1,3 +1,7 @@
 <div class="container">
   <h1> <%= @user.name %>'s profile</h1>
+    <ul>
+      <li> <a href="/users/<%= @user.id %>/comments"> comments </a> </li>
+      <li> <a href="/users/<%= @user.id %>/writings"> writings </a> </li>
+    </ul>
 </div>
