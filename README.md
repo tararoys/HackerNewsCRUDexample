@@ -1,7 +1,28 @@
-#Rspec tests in the Sinatra Skeleton 
+#How to run this project: 
 
-In addition to the basic sinatra setup, in order to run tests, you need to create a test database.  Therefore, run the following command: 
+Clone down the project. The magic words to type in the terminal to make it go are: 
 
-    RACK_ENV=test rake db:create
+```bash
+  bundle install
+  rake db:create
+  rake db:migrate
+  rake db:seed
+  shotgun config.ru
+```
 
-This creates a test database for rspec to shove dummy data into, so that your tests do not pollute the regular database. 
+If you wish to follow the rspec commands, the magic words to run the tests are 
+
+setup the test databse: 
+
+```bash 
+   RACK_ENV=test rake db:create
+   rake db:hard_reset 
+```
+
+The rake db:hard_reset is a badly-written custom rake command I made to reboot the entire test database if I wanted to. You can take a look at the source code to see whatall it does.
+
+Visit the webpage http://localhost:9393/ to see the app in all its glory.  Currently, it only lets you sign in and write comments on the dummy posts.
+
+
+------------------------------------------------------------------------------------------------------------
+
