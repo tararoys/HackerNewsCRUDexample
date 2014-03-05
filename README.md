@@ -101,7 +101,8 @@ Outline of things I needed to learn in order to crud
       - [One to many relationship with renamed associations.](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
 
 # User Authentication
-      -Bcrypt
+      - [Adding bcrypt to sinatra](https://github.com/tararoys/HackerNewsCRUDexample/commit/4c9df50c4a93a5157d9080ae2dfd1b1b10868aef)
+      - [Adding bcrypt to a model](https://github.com/tararoys/HackerNewsCRUDexample/commit/1a43fb8b75bfdf1636a42f0d44803a9d3150fa42) 
 
 # Controllers-View pieces
       Has up to three parts: 
