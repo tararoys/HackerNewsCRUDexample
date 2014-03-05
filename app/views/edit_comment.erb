@@ -1,0 +1,8 @@
+<div class="container">
+    <form id="comment" method="POST" action="/comment/<%= @comment.id %>/edit">
+      <textarea name="comment[content]" placeholder="We look forward to your commentary">
+        <%= @comment.content %>
+      </textarea>
+      <input type="submit" value="Edit Comment!">
+    </form>
+</div>
