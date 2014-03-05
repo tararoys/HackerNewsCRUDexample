@@ -86,6 +86,10 @@ Outline of things I needed to learn in order to crud
   - The counter:   - [Remember how drawing out the schema helped you and Ryan find and fix this issue? ](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
 
 # Models and Migrations
+  - [how do I set up migrations on the command line?](https://github.com/tararoys/basic_crud#migrations)
+  - [how do I set up models on the command line?](https://github.com/tararoys/basic_crud/#rakegeneratemodel)
+  - [a basic migration with indexes and constraints](https://github.com/tararoys/HackerNewsCRUDexample/blob/5d45968d04a20f704a9059c12911a5bf69b3cffe/db/migrate/20140226092539_create_users.rb)
+
 # Basic Validations
 # Activerecord Associations 
       -Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users) 
