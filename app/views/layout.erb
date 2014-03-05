@@ -18,6 +18,18 @@
   <title></title>
 </head>
 <body>
+
+  <nav> 
+    <ul>
+      <% if session[:user_id] %>
+        <li> hello, <%= User.find(session[:user_id]).name %> </li>
+        <li><a href="/users/logout">logout</a></li>
+      <% else %>
+        <li><a href="/users/login">login</a></li>
+      <% end %>
+    
+    </ul>
+  </nav>
   <%= yield %>
 </body>
 </html>
