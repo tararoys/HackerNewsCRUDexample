@@ -82,6 +82,9 @@ Outline of things I needed to learn in order to crud
   - [all right, have fun.  Make sure to adequately timebox yourself.](https://github.com/tararoys/Sinatra-Skills)
 
 # Schema Design
+  - The problem: I already know how this database works.  I don't need to draw it out! 
+  - The counter:   - [Remember how drawing out the schema helped you and Ryan find and fix this issue? ](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
+
 # Models and Migrations
 # Basic Validations
 # Activerecord Associations 
