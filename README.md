@@ -95,22 +95,22 @@ Outline of things I needed to learn in order to crud
   - [How do I validate an e-mail format?](https://github.com/tararoys/HackerNewsCRUDexample/commit/64d92f01a91ea5a8e60290fdf6dca905a7d08201)
 
 # Activerecord Associations 
-      - [Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users)](https://github.com/tararoys/ActiveRecord_Associations_Drill_Skeleton)
-      - [Here's a join table](https://github.com/tararoys/HackerNewsCRUDexample/commit/52def5758b94ca22467639bb66af69df27922ba1) 
+  - [Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users)](https://github.com/tararoys/ActiveRecord_Associations_Drill_Skeleton)
+  - [Here's a join table](https://github.com/tararoys/HackerNewsCRUDexample/commit/52def5758b94ca22467639bb66af69df27922ba1) 
 
-      - [One to many relationship with renamed associations.](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
+  - [One to many relationship with renamed associations.](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
 
 # User Authentication
-      - [Adding bcrypt to sinatra](https://github.com/tararoys/HackerNewsCRUDexample/commit/4c9df50c4a93a5157d9080ae2dfd1b1b10868aef)
-      - [Adding bcrypt to a model](https://github.com/tararoys/HackerNewsCRUDexample/commit/1a43fb8b75bfdf1636a42f0d44803a9d3150fa42) 
+  - [Adding bcrypt to sinatra](https://github.com/tararoys/HackerNewsCRUDexample/commit/4c9df50c4a93a5157d9080ae2dfd1b1b10868aef)
+  - [Adding bcrypt to a model](https://github.com/tararoys/HackerNewsCRUDexample/commit/1a43fb8b75bfdf1636a42f0d44803a9d3150fa42) 
 
 # Controllers-View pieces
-      Has up to three parts: 
-      - one GETS route
-      - one erb view
-      - one POST controller
+  Has up to three parts: 
+  - one GETS route
+  - one erb view
+  - one POST controller
 
-      [example of adding comments form](https://github.com/tararoys/HackerNewsCRUDexample/commit/b5d09d845d422739baaa3f38ec9cd2554b3790ca)
+  [example of adding comments form](https://github.com/tararoys/HackerNewsCRUDexample/commit/b5d09d845d422739baaa3f38ec9cd2554b3790ca)
 
 # controller pieces: 
     - Create 
