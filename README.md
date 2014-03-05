@@ -91,6 +91,9 @@ Outline of things I needed to learn in order to crud
   - [a basic migration with indexes and constraints](https://github.com/tararoys/HackerNewsCRUDexample/blob/5d45968d04a20f704a9059c12911a5bf69b3cffe/db/migrate/20140226092539_create_users.rb)
 
 # Basic Validations
+  - [How do I validate that an e-mail is true?](https://github.com/tararoys/HackerNewsCRUDexample/commit/eea00100d8b7d84b8c06049ac71336b9456bab13)
+  - [How do I validate an e-mail format?](https://github.com/tararoys/HackerNewsCRUDexample/commit/64d92f01a91ea5a8e60290fdf6dca905a7d08201)
+
 # Activerecord Associations 
       -Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users) 
 #    -One to many relationship with renamed associations. 
