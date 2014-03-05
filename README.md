@@ -95,8 +95,11 @@ Outline of things I needed to learn in order to crud
   - [How do I validate an e-mail format?](https://github.com/tararoys/HackerNewsCRUDexample/commit/64d92f01a91ea5a8e60290fdf6dca905a7d08201)
 
 # Activerecord Associations 
-      -Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users) 
-#    -One to many relationship with renamed associations. 
+      - [Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users)](https://github.com/tararoys/ActiveRecord_Associations_Drill_Skeleton)
+      - [Here's a join table](https://github.com/tararoys/HackerNewsCRUDexample/commit/52def5758b94ca22467639bb66af69df27922ba1) 
+
+      - [One to many relationship with renamed associations.](https://github.com/tararoys/HackerNewsCRUDexample/commit/1bd4ee69fd99658a0854c5b3cfc879fa296b8e3e)
+
 # User Authentication
       -Bcrypt
 
