@@ -39,7 +39,8 @@ get "/users/:id" do
   erb :profile
 end
 
-get "/users/:id/writings" do 
-  "this is a writings page"
-
+get "/users/:id/comments" do
+  @user = User.find(params[:id])
+  @comments = @user.comments.order(:created_at).reverse_order
+  erb :user_comments
 end
