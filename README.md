@@ -106,9 +106,11 @@ Outline of things I needed to learn in order to crud
 
 # Controllers-View pieces
       Has up to three parts: 
-      - one gets controller
+      - one GETS route
       - one erb view
-      -one post controller
+      - one POST controller
+
+      [example of adding comments form](https://github.com/tararoys/HackerNewsCRUDexample/commit/b5d09d845d422739baaa3f38ec9cd2554b3790ca)
 
 # controller pieces: 
     - Create 
