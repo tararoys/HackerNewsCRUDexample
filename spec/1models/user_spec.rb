@@ -66,7 +66,16 @@ describe User do
       expect{User.create(name: "tara", email: "tara@tara.com")}.to_not raise_error BCrypt::Errors::InvalidHash
     end
 
+    it ("should have a name column") do 
+      #add column migration 
+      #source: http://api.rubyonrails.org/classes/ActiveRecord/Migration.html
+      
 
+
+      zoe = User.create(  name: "zoe", email: "zoe@serenity.com", password: "password")
+      expect(zoe.name).to eq("zoe")
+
+    end
 
 
 
