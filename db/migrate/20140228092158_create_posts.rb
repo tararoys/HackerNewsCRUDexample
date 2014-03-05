@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |column|
       column.string :title
       column.text :source
-      column.integer :user_id 
+      column.integer :author 
       column.timestamps
 
 

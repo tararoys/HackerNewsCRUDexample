@@ -55,8 +55,10 @@ describe "Associations" do
       zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
       post = Post.create(title: "I hate the alliance", source: "We will rise again.", author: zoe)
       
+
       # expect(zoe.posts.count).to eq(1)
       expect(post.author.name).to eq("zoe")
+      expect(zoe.writings.count).to eq(1)
 
     end 
 

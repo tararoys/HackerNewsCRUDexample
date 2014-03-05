@@ -11,7 +11,7 @@ describe Comment do
   it "should have author, a post_id, a time created, and a source" do
         user = User.create(name: "tara", email: "tara@tara.com", password: "password")
         post = Post.create( title: "First Post", source: "Yay lots of source",
-                  user_id: user.id)
+                  author: user)
 
         comment_content = {
                   user_id: user.id, 
