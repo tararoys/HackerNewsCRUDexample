@@ -117,6 +117,6 @@ Outline of things I needed to learn in order to crud
     -[logging out a user](https://github.com/tararoys/HackerNewsCRUDexample/commit/7862f646b137450ea0c782ef665167c5be789ec1)
   - [Read: showing all of a user's posts](https://github.com/tararoys/HackerNewsCRUDexample/commit/2cfb5b47bffec1f483393ab79ddd904d7be5e4b6) 
   - [Update: editing a comment](https://github.com/tararoys/HackerNewsCRUDexample/commit/6ba7ddefe230a78f2af095931c777e4b9de76b45)
-  - [form for edit comment](https://github.com/tararoys/HackerNewsCRUDexample/commit/70a05c94101a25a3e57a065fdee2cd80e4124f45)
+    - [form for edit comment](https://github.com/tararoys/HackerNewsCRUDexample/commit/70a05c94101a25a3e57a065fdee2cd80e4124f45)
   - [Destroy](https://github.com/tararoys/HackerNewsCRUDexample/commit/1b3a9b5087953a01a2bc06c813ecec2118cf3ae5) 
 
