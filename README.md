@@ -55,3 +55,14 @@ This table of contents is what I learned and approximately the order I learned t
     -Read 
     -Update
     -Destroy 
+
+
+Outline of things I needed to learn in order to crud
+1. Github 
+2. How to get along with people
+3. How to break a problem into smaller parts
+4. How to set strong boundaries so that people would give me the space I need to learn. 
+5. How to love the tests and hate feeling pressured to 'skip the tests and just get it done.'
+
+6. The tester's creed: "NEVER AGAIN shall anyone have to suffer as I have suffered at the hands of this bug." 
+
