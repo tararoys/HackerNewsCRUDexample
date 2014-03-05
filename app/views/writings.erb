@@ -1,7 +1,7 @@
 <div class="container">
   <ul>
     <% @writings.each do |writing| %>
-      <li> <a href="writing/<%=writing.id%>"><%= writing.title %></a> <a href="<%= writing.source%>"><%= writing.source%></a><br> <a href="/users/<%=writing.author.id%>"> <%= writing.author.name %> </a> <%= writing.comments.count %> </li>
+      <li> <a href="/post/<%=writing.id%>"><%= writing.title %></a> <a href="<%= writing.source%>"><%= writing.source%></a><br> <a href="/users/<%=writing.author.id%>"> <%= writing.author.name %> </a> <%= writing.comments.count %> </li>
     <% end %>
   <ul>
 </div>
