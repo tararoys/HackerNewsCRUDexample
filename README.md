@@ -26,3 +26,32 @@ Visit the webpage http://localhost:9393/ to see the app in all its glory.  Curre
 
 ------------------------------------------------------------------------------------------------------------
 
+Things I learned to do while making this app.
+
+This table of contents is what I learned and approximately the order I learned them in.
+
+#Outline for crudding
+
+1. User stories
+2. Wireframing
+3. Behavior Flows
+4. Schema Design
+5. Models and Migrations
+6. Basic Validations
+7. Activerecord Associations 
+      -Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users) 
+8.    -One to many relationship with renamed associations. 
+9.User Authentication
+      -Bcrypt
+
+10. Controllers-View pieces
+      Has up to three parts: 
+      - one gets controller
+      - one erb view
+      -one post controller
+
+11. controller pieces: 
+    -Create 
+    -Read 
+    -Update
+    -Destroy 
