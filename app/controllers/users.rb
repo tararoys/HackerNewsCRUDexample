@@ -34,6 +34,6 @@ post '/users/signup' do
 end
 
 get "/users/:id" do 
-  @user = User.find(session[:user_id]) if session[:user_id]
+  @user = User.find(params[:id])
   erb :profile
 end

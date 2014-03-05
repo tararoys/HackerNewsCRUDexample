@@ -4,7 +4,7 @@
   <ul>
       <% @posts.each do |post| %>
         <%= post.inspect %>
-        <li> <a href="post/<%=post.id%>"><%= post.title %></a> <a href="<%= post.source%>"><%= post.source%></a><br> <%= post.author.name %> <%= post.comments.count %> </li>
+        <li> <a href="post/<%=post.id%>"><%= post.title %></a> <a href="<%= post.source%>"><%= post.source%></a><br> <a href="/users/<%=post.author.id%>"> <%= post.author.name %> </a> <%= post.comments.count %> </li>
       <% end %>      
   </ul>
 </div>
