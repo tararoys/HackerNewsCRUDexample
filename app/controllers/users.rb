@@ -13,3 +13,8 @@ post '/users/login' do
   end
 
 end
+
+get '/users/logout' do
+  session[:user_id] = nil
+  redirect '/' 
+end
