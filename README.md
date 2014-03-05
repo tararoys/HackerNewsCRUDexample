@@ -30,9 +30,9 @@ Things I learned to do while making this app.
 
 This table of contents is what I learned and approximately the order I learned them in.
 
-#Outline for crudding
+#Outline for Crudding
 
-1. User stories
+1. User stories 
 2. Wireframing
 3. Behavior Flows
 4. Schema Design
@@ -51,10 +51,10 @@ This table of contents is what I learned and approximately the order I learned t
       -one post controller
 
 11. controller pieces: 
-    -Create 
-    -Read 
-    -Update
-    -Destroy 
+    - Create 
+    - Read 
+    - Update
+    - Destroy 
 
 
 Outline of things I needed to learn in order to crud
@@ -65,4 +65,3 @@ Outline of things I needed to learn in order to crud
 5. How to love the tests and hate feeling pressured to 'skip the tests and just get it done.'
 
 6. The tester's creed: "NEVER AGAIN shall anyone have to suffer as I have suffered at the hands of this bug." 
-
