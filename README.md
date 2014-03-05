@@ -120,3 +120,8 @@ Outline of things I needed to learn in order to crud
     - [form for edit comment](https://github.com/tararoys/HackerNewsCRUDexample/commit/70a05c94101a25a3e57a065fdee2cd80e4124f45)
   - [Destroy](https://github.com/tararoys/HackerNewsCRUDexample/commit/1b3a9b5087953a01a2bc06c813ecec2118cf3ae5) 
 
+
+  Things I didn't explicitly cover: Css. Javascript. Ajax. Jquery.  
+
+  Phwew.  Everything I know that I know is now on one readme in order. 
+
