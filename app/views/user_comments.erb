@@ -2,7 +2,7 @@
   <h1> <%= @user.name %>'s comments</h1>
   <ul>
      <% @comments.each do |comment| %>
-        <li> <%= comment.content %> <a href="/users/<%=comment.user.id%>"><%= comment.user.name %></a> <span> <%= comment.created_at.to_s(:db) %></span></li>
+        <li> <a href="/post/<%=comment.post.id%>"> <%= comment.content %> </a>  <a href="/users/<%=comment.user.id%>"><%= comment.user.name %></a> <span> <%= comment.created_at.to_s(:db) %></span></li>
       <% end %>
   </ul>
 </div>
