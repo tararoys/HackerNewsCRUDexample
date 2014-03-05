@@ -1,8 +1,8 @@
         zoe = User.create(name: "zoe", email: "zoe@serenity.com", password: "password")
         inara = User.create(name: "inara", email: "inara@serenity.com", password: "password")
 
-        hate_the_alliance = Post.create(title: "I hate the alliance", source: "We will rise again.", author: zoe)
-        i_said_dont = Post.create(title: "Don't come in my shuttle", source: "The exact words I used were don't", author: inara)
+        hate_the_alliance = Post.create(title: "I hate the alliance", source: "http://wewillriseagain.com", author: zoe)
+        i_said_dont = Post.create(title: "Don't come in my shuttle", source: "http://dont.com", author: inara)
 
 
         zoe_hates_alliance = Comment.create(user_id: zoe.id, post_id: hate_the_alliance.id, content: "You have a problem with your brain being missing")
