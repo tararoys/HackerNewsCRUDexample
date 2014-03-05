@@ -65,3 +65,29 @@ Outline of things I needed to learn in order to crud
 5. How to love the tests and hate feeling pressured to 'skip the tests and just get it done.'
 
 6. The tester's creed: "NEVER AGAIN shall anyone have to suffer as I have suffered at the hands of this bug." 
+
+
+
+# User stories 
+# Wireframing
+# Behavior Flows
+# Schema Design
+# Models and Migrations
+# Basic Validations
+# Activerecord Associations 
+      -Many-to-Many Relationship between users and posts (A user comments on many posts, and a post is commented on by many users) 
+#    -One to many relationship with renamed associations. 
+# User Authentication
+      -Bcrypt
+
+# Controllers-View pieces
+      Has up to three parts: 
+      - one gets controller
+      - one erb view
+      -one post controller
+
+# controller pieces: 
+    - Create 
+    - Read 
+    - Update
+    - Destroy 
