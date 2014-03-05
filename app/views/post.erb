@@ -2,4 +2,12 @@
   <div class="post">
     <a href="post/<%=@post.id%>"><%= @post.title %></a> <a href="<%= @post.source%>"><%= @post.source%></a><br> <a href="/users/<%=@post.author.id%>"> <%= @post.author.name %> </a> <%= @post.comments.count %>
   </div>
+
+  <div class="comments">
+    <ul>
+      <% @comments.each do |comment| %>
+        <li> <%= comment.content %> <a href="/users/<%=comment.user.id%>"><%= comment.user.name %></a> <span> <%= comment.created_at.to_s(:db) %></span></li>
+      <% end %>
+    </ul>
+  </div>
 </div>
