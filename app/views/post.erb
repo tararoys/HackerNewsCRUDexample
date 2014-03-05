@@ -8,11 +8,18 @@
     <ul>
       <% @comments.each do |comment| %>
         <li> <%= comment.content %> 
+          
           <% if @user && comment.user_id == @user.id %>
             <a href="/comment/<%= comment.id %>/edit"> edit </a>
           <% end %>
+          
           <a href="/users/<%=comment.user.id%>"><%= comment.user.name %></a> 
           <span> <%= comment.created_at.to_s(:db) %></span>
+          
+          <% if @user && comment.user_id == @user.id %>
+            <a href="/comment/<%= comment.id %>/delete"> delete </a>
+          <% end %>
+        
         </li>
       <% end %>
     </ul>

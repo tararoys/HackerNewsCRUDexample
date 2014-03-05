@@ -19,3 +19,11 @@ post "/comment/:id/edit" do
   comment = Comment.update(params[:id], content: params[:comment][:content])
   redirect "/post/#{comment.post.id}"
 end
+
+get "/comment/:id/delete" do
+  comment = Comment.find(params[:id])
+  post = comment.post
+  Comment.delete(comment.id)
+  
+  redirect "/post/#{post.id}"
+end
